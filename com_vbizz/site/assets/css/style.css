@@ -1,0 +1,18 @@
+.filter .filet_left {
+	text-align:left;
+}
+.filter .btn {
+	padding:0px 5px;
+	border-radius:0;
+}
+.filter_income input, .filter_income select, .filter_income .input-append, 
+.filter_expense input, .filter_expense select, .filter_expense .input-append {
+	width:100px;
+}
+.calendar, .calendar table {
+	vertical-align:top;
+}
+.filter .filter_right .status {
+	padding:0 0 0 5px;
+}
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="2.5" method="upgrade">
+ <name>vBizz Package</name>
+ <packagename>vbizz</packagename>
+ <creationDate>April 2017</creationDate>
+ <author>Team WDMtech</author>
+ <authorEmail>support@wdmtech.com</authorEmail>
+ <authorUrl>http://www.wdmtech.com</authorUrl>
+ <copyright>Copyright (C) 2017 www.wdmtech.com. All Rights Reserved.</copyright>
+ <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+ <version>1.0.1</version>
+ <packager>WDMtech</packager>
+ <packagerurl>http://www.wdmtech.com</packagerurl>
+<scriptfile>script.php</scriptfile>
+ <files>
+<file type="component" id="com_vbizz">com_vbizz.zip</file>
+<file type="module" id="mod_vbizz_login" client="site">mod_vbizz_login.zip</file>
+<file type="module" id="mod_vbizz_notify" client="site">mod_vbizz_notify.zip</file>
+<file type="module" id="mod_vbizz_search" client="site">mod_vbizz_search.zip</file>
+</files>
+</extension>

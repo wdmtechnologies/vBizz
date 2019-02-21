@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1.1" method="upgrade">
+<name>vbizz</name>
+	<creationDate>March 2017</creationDate>
+	<author>Team WDMtech</author>
+	<authorEmail>support@wdmtech.com</authorEmail>
+	<authorUrl>http://www.wdmtech.com</authorUrl>
+	<copyright>Copyright (C) 2017 wdmtech.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0.1</version>
+	<scriptfile>script.php</scriptfile>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+<media folder="media" destination="com_vbizz">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+<files folder="site">
+              <filename>vbizz.php</filename>
+			 <filename>router.php</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>classes</folder>
+			<folder>invoice</folder>
+			<folder>cron</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>operating</folder>
+			<folder>pdf</folder>
+			<folder>sidebar</folder>
+			<folder>uploads</folder>
+			<folder>views</folder>
+</files>
+ 
+<administration>
+	<menu view="vbizz">VBIZZ_DASHBOARD</menu>
+	<submenu>
+			<menu view="vbizz">VBIZZ_DASHBOARD_SUBMENU</menu>
+            <menu view="configuration">VBIZZ_DASHBOARD_CONFIGURATION</menu>
+			<menu view="templates">VBIZZ_DASHBOARD_ETEMPTXT</menu>
+			 <menu view="users">VBIZZ_DASHBOARD_OWNER_MANAGER</menu>
+			  <menu view="country">VBIZZ_DASHBOARD_COUNTRIES</menu>
+			   <menu view="states">VBIZZ_DASHBOARD_STATES</menu>
+			   <menu view="notes">VBIZZ_DASHBOARD_NOTESTXT</menu>
+			   
+	</submenu>
+    <files folder="admin">
+			<!-- Site Main File Copy Section -->
+			<filename>vbizz.php</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>classes</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			
+		</files>
+	
+</administration>
+    <updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="2" name="VBIZZ_UPDATE_SITE">https://www.wdmtech.com/prod_updates/vbizz-upgrade.xml</server>
+	</updateservers>
+
+
+</extension>

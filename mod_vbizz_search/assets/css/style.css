@@ -1,0 +1,35 @@
+.ui-autocomplete-category {
+	font-weight: bold;
+	padding: .2em .4em;
+	margin: .8em 0 .2em;
+	line-height: 1.5;
+}
+.vbz_search .vc_search{position:relative;display:inline-block;}
+.vbz_search .vc_search input[type="text"] {
+    border-radius: 15px;
+    height: 28px;
+    padding: 0 30px 0 10px;
+    width: 125px;
+	transition: all 0.3s ease-in-out 0s;
+}
+.vbz_search .vc_search input:focus{width:175px;}
+.vbz_search .vc_search .btn {
+	background:none;
+	box-shadow:none;
+	border:medium none;
+    color:#999999;
+    font-size:14px;
+    height:28px;
+    padding:0 10px;
+    position:absolute;
+    right:0;
+	top:0;
+}
+.vbz_search .vc_search .btn:hover {color:#666;}
+
+.ui-front.ui-menu .ui-state-hover, .ui-front.ui-menu .ui-widget-content .ui-state-hover, .ui-front.ui-menu .ui-widget-header .ui-state-hover, .ui-front.ui-menu .ui-state-focus, .ui-front.ui-menu .ui-widget-content .ui-state-focus, .ui-front.ui-menu .ui-widget-header .ui-state-focus{
+	background: #eee;
+    border: 1px solid #dddddd;
+    color: #212121;
+}
+.ui-front.ui-menu{max-height:250px;overflow-x:hidden;overflow-y:auto;}
