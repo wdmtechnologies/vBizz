@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/parent"
+    android:paddingStart="15dp"
+
+    android:background="?attr/selectableItemBackground"
+     android:clickable="true"
+     android:paddingBottom="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profile_frag_admin_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_profile_frag_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_alignTop="@id/civ_profile_frag_admin_pic"
+        android:layout_marginTop="9dp"
+         android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/civ_profile_frag_admin_pic"
+        android:fontFamily="@font/rubik_regular"
+        android:textSize="18sp"
+        android:textColor="#000"
+         />
+
+    <TextView
+        android:id="@+id/tv_profile_frag_item_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View and update your profile"
+        android:layout_marginTop="5dp"
+         android:layout_alignLeft="@id/tv_profile_frag_item_title"
+        android:layout_below="@id/tv_profile_frag_item_title"
+         android:fontFamily="@font/rubik_regular"
+        android:textSize="15sp"
+        />
+
+
+</RelativeLayout>

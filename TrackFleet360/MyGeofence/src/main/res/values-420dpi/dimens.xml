@@ -1,0 +1,64 @@
+<resources>
+
+
+    <dimen name="width_profile_dialog">390dp</dimen>
+    <dimen name="height_profile_dialog">500dp</dimen>
+
+    <dimen name="padding_vertical">24dp</dimen>
+    <dimen name="login_checkbox_margin_top">14.4dp</dimen>
+    <dimen name="dialog_height">892dp</dimen>
+    <dimen name="card_width">396dp</dimen>
+    <dimen name="bottom_nav_height">120dp</dimen>
+    <dimen name="icon_size">40.8dp</dimen>
+    <dimen name="dialog_width">600dp</dimen>
+    <dimen name="splash_screen_text">25sp</dimen>
+    <dimen name="dialog_paddingLeft">30dp</dimen>
+
+    <dimen name="profile_dialog_width">350.6dp</dimen>
+    <dimen name="profile_dialog_height">464.6dp</dimen>
+    <dimen name="size_driver_item">30dp</dimen>
+
+
+    <dimen name="item_driver_horizontal_margin">20dp</dimen>
+    <dimen name="driver_item_img_width">45dp</dimen>
+    <dimen name="driver_item_img_height">45dp</dimen>
+
+    <dimen name="height_cv_home">45dp</dimen>
+    <dimen name="tv_width_trip_detail">360dp</dimen>
+    <dimen name="padding_horizontal">10dp</dimen>
+    <dimen name="size_tv_16sp">20sp</dimen>
+
+    <dimen name="width_nav_view">260dp</dimen>
+
+    <!--trip dialog-->
+    <!--<dimen name="width_trip_dialog">380dp</dimen>-->
+    <!--<dimen name="height_trip_dialog">380.4dp</dimen>-->
+    <dimen name="width_et_trip_dialog">285.8dp</dimen>
+
+
+    <!--Splash-->
+    <dimen name="width_img_splash">290dp</dimen>
+    <dimen name="width_splash_txt">290dp</dimen>
+
+    <!--login-->
+    <dimen name="width_btn_login">405dp</dimen>
+    <dimen name="padding_horizontal_login">24dp</dimen>
+    <dimen name="padding_vertical_login">62.5dp</dimen>
+    <dimen name="width_card_login">300.5dp</dimen>
+    <dimen name="height_card_login">375dp</dimen>
+    <dimen name="width_logo_login">285dp</dimen>
+    <dimen name="height_logo_login">44.5dp</dimen>
+    <dimen name="margin_top_card_login">30dp</dimen>
+    <dimen name="margin_top_logo_login">35dp</dimen>
+
+    <!--map fragment-->
+    <dimen name="height_cv_map_fragment">50dp</dimen>
+    <dimen name="margin_top_cv_map_fragment">27.6dp</dimen>
+    <dimen name="margin_horizontal_cv_map_fragment">25dp</dimen>
+    <dimen name="size_ib_drawer_map_frag">45dp</dimen>
+    <dimen name="size_pb_map_frag">24dp</dimen>
+
+
+
+
+</resources>

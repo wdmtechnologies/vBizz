@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="light_blue">#2196F3</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="dot_active">@color/white</color>
+    <color name="red">#F80000</color>
+    <color name="light_red">#EA4D34</color>
+    <color name="dot_inactive">@color/grey</color>
+    <color name="intro_status_bar_color">#24323D</color>
+    <color name="mid_grey">#696969</color>
+
+    <color name="black">#000</color>
+
+
+
+</resources>

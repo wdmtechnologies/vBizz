@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#fff">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_new_trip"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="New Trip"
+             android:paddingRight="20dp"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/appbar"
+        app:cardBackgroundColor="#fff"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+         app:cardPreventCornerOverlap="true"
+        app:cardElevation="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_13sdp">
+
+
+            <EditText
+                android:id="@+id/et_dialog_trip_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:paddingStart="@dimen/_6sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:inputType="textPersonName"
+                android:hint="Trip name" />
+
+            <EditText
+                android:id="@+id/et_dialog_source_address"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_dialog_trip_name"
+                 android:textSize="@dimen/_13ssp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:focusable="false"
+                 android:paddingStart="6dp"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@id/et_dialog_trip_name"
+                android:hint="Source address" />
+
+            <ImageButton
+                android:id="@+id/ib_src_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_place"
+                android:layout_below="@id/et_dialog_trip_name"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/et_dialog_source_address"
+                android:layout_alignBottom="@id/et_dialog_source_address"
+                android:backgroundTint="@android:color/transparent"
+
+                />
+
+            <EditText
+                android:id="@+id/et_dialog_dest_address"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_dialog_trip_name"
+                 android:focusable="false"
+                android:inputType="text"
+                android:textSize="@dimen/_13ssp"
+                android:paddingStart="6dp"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_toRightOf="@id/et_dialog_source_address"
+                android:layout_below="@id/et_dialog_source_address"
+                android:hint="Destination address" />
+
+
+            <ImageButton
+                android:id="@+id/ib_dest_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_place"
+                android:cursorVisible="false"
+                android:layout_below="@id/et_dialog_source_address"
+                android:layout_marginStart="2dp"
+                android:layout_alignBottom="@id/et_dialog_dest_address"
+                android:layout_toEndOf="@id/et_dialog_dest_address"
+                android:backgroundTint="@android:color/transparent"
+                />
+
+            <EditText
+                android:id="@+id/et_dialog_pickup_time"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_dialog_trip_name"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/_13ssp"
+                android:paddingStart="6dp"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/et_dialog_dest_address"
+                android:hint="Pickup time" />
+
+
+            <ImageButton
+                android:id="@+id/ib_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock"
+                android:layout_below="@id/et_dialog_dest_address"
+                android:layout_marginRight="3dp"
+                android:layout_alignBottom="@id/et_dialog_pickup_time"
+                android:layout_toRightOf="@id/et_dialog_pickup_time"
+                android:backgroundTint="@android:color/transparent"
+
+                />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/et_dialog_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_dialog_trip_name"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_marginTop="3dp"
+                android:paddingStart="6dp"
+                android:layout_toRightOf="@id/et_dialog_source_address"
+                android:layout_below="@id/ib_clock"
+                android:hint="Driver name " />
+
+
+
+
+
+            <EditText
+                android:id="@+id/et_geofence1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_dialog_trip_name"
+                android:layout_below="@id/et_dialog_driver"
+                android:textSize="@dimen/_11ssp"
+                  android:layout_marginTop="6dp"
+                android:cursorVisible="false"
+                android:hint="Add a geofence"
+                />
+
+
+            <EditText
+                android:id="@+id/spinner_dialog_poi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_dialog_trip_name"
+                android:textSize="@dimen/_11ssp"
+                android:layout_below="@id/et_geofence1"
+                android:cursorVisible="false"
+                android:hint="Add a POI"
+                />
+
+
+            <Button
+                android:id="@+id/btn_dialog_add_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:textSize="17sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@id/spinner_dialog_poi"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/light_red"
+                android:text="Add"
+                />
+
+            <Button
+                android:id="@+id/btn_dialog_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/light_red"
+                android:textSize="17sp"
+                android:layout_toStartOf="@id/btn_dialog_add_trip"
+                android:layout_alignTop="@id/btn_dialog_add_trip"
+                android:text="Reset"
+                />
+
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_below="@id/spinner_dialog_poi"
+                 />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

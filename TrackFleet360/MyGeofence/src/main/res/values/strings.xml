@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Track Fleet 360</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_notification">Alerts</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_signout">Sign Out</string>
+
+
+    <!--intro_pager_-->
+
+    <string name="splash_screen_txt">Live track,Monitor and improve your operations...</string>
+
+    <string name="et_map_hint">Search by driver or trip name</string>
+    <!--https://github.com/rubensousa/ViewPagerCards/blob/master/app/src/main/res/layout/fragment_adapter.xml-->
+
+    <array name="nav_titles">
+
+        <item>Home</item>
+        <item>Notifications</item>
+
+        <item>Settings</item>
+        <item>Sign Out</item>
+
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_trips_no_trips">Trips and Stats appear here</string>
+    <string name="update_btn">Update</string>
+    <string name="network_error">No internet found, Check your internet connection or try again</string>
+
+    <string-array name="trip_name">
+
+        <item>JLN Trip</item>
+        <item>IGI Trip</item>
+        <item>Gurgaon</item>
+        <item>India Gate Trip</item>
+        <item>GIP Trip</item>
+        <item>Batla House Trip</item>
+        <item>Noida trip</item>
+
+    </string-array>
+
+    <string-array name="dest_adrs">
+
+        <item>Jawahar Lal Nehru Stadium</item>
+        <item>IGI Airport</item>
+        <item>Gurgaon</item>
+        <item>India Gate</item>
+        <item>GIP, Noida</item>
+        <item>Batla House</item>
+        <item>Noida Sector 15</item>
+    </string-array>
+
+    <string-array name="dest_latlong">
+
+        <item>28.5828, 77.2344</item>
+        <item>28.5562 , 77.1000</item>
+        <item>28.4595,77.0266</item>
+        <item>28.6129,77.2295</item>
+        <item>28.5675,77.3262</item>
+        <item>28.5692,77.2886</item>
+        <item>28.5851,77.3116</item>
+    </string-array>
+
+
+    <string-array name="source_adrs">
+        <item>Shaheen Bagh</item>
+        <item>Gurgaon</item>
+        <item>Noida</item>
+        <item>Old Delhi Rail. Station</item>
+        <item>Saket</item>
+        <item>AIIMS</item>
+        <item>IGI Airport</item>
+    </string-array>
+
+    <string-array name="source_latlong">
+
+        <item>28.5513,77.2970</item>
+        <item>28.4595,77.0266</item>
+        <item>28.5355, 77.3910</item>
+        <item>28.6606 , 77.2271</item>
+        <item>28.5246 , 77.2066</item>
+        <item>28.5679 , 77.2095</item>
+        <item>28.5562 , 77.1000</item>
+
+    </string-array>
+
+    <string-array name="driver_name">
+        <item>Sunil Sharma</item>
+        <item>Noah Ismail</item>
+        <item>Sam Curran</item>
+        <item>Martin William</item>
+        <item>William flower</item>
+        <item>Mike Hales</item>
+        <item>Simon Frey</item>
+    </string-array>
+
+    <string-array name="driver_email">
+
+        <item>cameronalex112@gmail.com</item>
+        <item>noahismail2323@gmail.com</item>
+        <item>samcurran2222@gmail.com</item>
+        <item>martinwilliam9442@gmail.com</item>
+        <item>williamflower@gmail.com</item>
+        <item>mikehales1212@gmail.com</item>
+        <item>simonfrey8394@gmail.com</item>
+
+    </string-array>
+
+    <string-array name="vehilce_model">
+        <item>Maruti Ritz</item>
+        <item>Swift Dzire</item>
+        <item>Swift Dzire</item>
+        <item>Swift Dzire</item>
+        <item>Swift Dzire</item>
+        <item>Swift Dzire</item>
+        <item>Swift Dzire</item>
+    </string-array>
+
+    <string-array name="vehicle_no">
+        <item>HRX 112</item>
+        <item>null</item>
+        <item>CYX 2323</item>
+        <item>23BXY3</item>
+        <item>null</item>
+        <item>GH 2322</item>
+        <item>LH 5423</item>
+    </string-array>
+
+    <integer-array name="driver_img">
+        <item>@drawable/img1</item>
+        <item>@drawable/img2</item>
+        <item>@drawable/img3</item>
+        <item>@drawable/img4</item>
+        <item>@drawable/img5</item>
+        <item>@drawable/img6</item>
+        <item>@drawable/img7</item>
+    </integer-array>
+
+
+</resources>

@@ -1,0 +1,73 @@
+<resources>
+
+
+	<!--trip dialog-->
+	<!--<dimen name="width_trip_dialog">350dp</dimen>-->
+	<!--<dimen name="height_trip_dialog">370.4dp</dimen>-->
+	<dimen name="padding_horizontal_trip_dialog">10dp</dimen>
+	<dimen name="width_et_trip_dialog">270dp</dimen>
+	<dimen name="padding_vertical_trip_dialog">6dp</dimen>
+	<dimen name="margin_top_trip_dialog">30dp</dimen>
+
+
+
+
+
+
+	<dimen name="padding_vertical">16dp</dimen>
+	<dimen name="login_checkbox_margin_top">10.8dp</dimen>
+	<dimen name="bottom_nav_height">90dp</dimen>
+	<dimen name="icon_size">30.6dp</dimen>
+	<dimen name="splash_screen_text">24sp</dimen>
+
+	<dimen name="dialog_paddingLeft">22.5dp</dimen>
+	<dimen name="dialog_width">365dp</dimen>
+	<dimen name="dialog_height">509dp</dimen>
+	<dimen name="padding_horizontal">20dp</dimen>
+	<dimen name="width_profile_dialog">370dp</dimen>
+	<dimen name="size_driver_item">30dp</dimen>
+
+	<dimen name="height_profile_dialog">500dp</dimen>
+	<dimen name="width_et_dialog">325dp</dimen>
+	<dimen name="width_dialog">315dp</dimen>
+	<dimen name="height_dialog">645dp</dimen>
+	<dimen name="margin_top_et">5dp</dimen>
+
+	<dimen name="margin_top_update_btn_profile_dialog">25dp</dimen>
+	<dimen name="margin_top_btn_dismiss_dialog">6dp</dimen>
+	<dimen name="margin_end_btn_dismiss_dialog">6dp</dimen>
+	<dimen name="item_driver_horizontal_margin">15dp</dimen>
+	<dimen name="driver_item_img_width">33.8dp</dimen>
+	<dimen name="cv_home_fragment_searchbox_height">72dp</dimen>
+	<dimen name="driver_item_img_height">33.8dp</dimen>
+
+ 	<dimen name="width_dest_address_trip_detail">1000dp</dimen>
+	<dimen name="size_tv_16sp">20sp</dimen>
+	<dimen name="width_tv_dest_address_trip_detail">260dp</dimen>
+    <dimen name="width_nav_view">200dp</dimen>
+
+	<!--Splash-->
+	<dimen name="width_img_splash">290dp</dimen>
+	<dimen name="width_splash_txt">290dp</dimen>
+
+	<!--login-->
+	<dimen name="padding_horizontal_login">16dp</dimen>
+	<dimen name="width_card_login">297dp</dimen>
+	<dimen name="height_card_login">350dp</dimen>
+	<dimen name="width_btn_login">270dp</dimen>
+	<dimen name="width_logo_login">250dp</dimen>
+	<dimen name="height_logo_login">45dp</dimen>
+	<dimen name="margin_top_card_login">37.3dp</dimen>
+	<dimen name="margin_top_logo_login">45dp</dimen>
+
+	<!--map fragment-->
+	<dimen name="height_cv_map_fragment">72dp</dimen>
+	<dimen name="margin_top_cv_map_fragment">37.2dp</dimen>
+	<dimen name="margin_horizontal_cv_map_fragment">22.5dp</dimen>
+	<dimen name="size_ib_drawer_map_frag">24dp</dimen>
+	<dimen name="size_pb_map_frag">24dp</dimen>
+
+
+
+
+</resources>

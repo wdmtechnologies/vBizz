@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.DriverDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#fff">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/fragment_trips_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:elevation="@dimen/_6sdp"
+            />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_driver"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+             android:layout_centerHorizontal="true"
+            android:src="@drawable/driver"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_driver"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_centerHorizontal="true"
+            android:text="Andre Fletcher"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

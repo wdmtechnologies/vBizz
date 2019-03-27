@@ -1,0 +1,13 @@
+Location updates using LocationListener callback should be used for foreground purposes .i.e when app is running(in focus)
+Location listener must be removed when activity is not in foreground. otherwise Android can't reclaim memory
+
+FusedLocationProvider :  Fused Location is actually a location service which combines GPS location and network location to achieve
+                         balance between battery consumption and accuracy.
+                         The fused location provider is a location API in Google Play services that intelligently combines different
+                         signals to provide the location information that your app needs
+
+Looper version of requestLocationUpdate provides the location udpates on the worker thread(background  handler thread)
+instead of main thread(UI thread)
+
+Criteria version of requestLocationUpdate provides the fixes(location update) based on the requirement
+specified in Criteria object

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator_layout_trip"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+       >
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#fff">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/fragment_trips_toolbar"
+                android:layout_width="match_parent"
+                app:title="Add New Trip"
+                android:layout_height="?attr/actionBarSize"
+                app:elevation="@dimen/_2sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Trips"
+                        android:textColor="#000"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="@dimen/_16ssp"/>
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/trip_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                         android:layout_centerVertical="true"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+             <View
+                 android:id="@+id/shadow_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@id/bottom_nav_view"
+                android:background="@drawable/shadow"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+
+         <android.support.v4.widget.SwipeRefreshLayout
+             android:id="@+id/swipe_refresh_trip_list"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/appbar"
+
+             android:layout_height="wrap_content">
+
+             <android.support.v7.widget.RecyclerView
+                 android:id="@+id/rv_fragment_trips"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                 />
+
+         </android.support.v4.widget.SwipeRefreshLayout>
+
+
+         <TextView
+             android:id="@+id/empty_view"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:visibility="gone"
+             android:textAllCaps="true"
+             android:fontFamily="@font/rubik_regular"
+             android:textSize="@dimen/_20ssp"
+             android:text="No trip found !  "/>
+
+
+        <ProgressBar
+            android:id="@+id/pb_trip_list"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_above="@id/fab_new_trip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_60sdp"
+             />
+
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab_new_trip"
+         android:layout_width="@dimen/_55sdp"
+         android:layout_height="@dimen/_55sdp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:src="@drawable/ic_add"
+          android:layout_margin="@dimen/_10sdp"/>
+
+
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

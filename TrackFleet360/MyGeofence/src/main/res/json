@@ -1,0 +1,9 @@
+{
+  "qgroups":[[{"id":"40","qorder":"1","title":"A","description":" Description A"}
+  ,{"id":"41","qorder":"2","title":"B","description":"Description B"}]
+
+  ],"messages":[[{"groupid":"1","score":"30","article_id":"0","message":"Group A - Msg 3<\/p>","rating":"3"}
+  ,{"groupid":"1","score":"20","article_id":"0","message":"Group A - Msg 2<\/p>","rating":"2"},
+  {"groupid":"1","score":"10","article_id":"0","message":"Group A - Msg 1<\/p>","rating":"1"}]
+ ,[{"groupid":"2","score":"110","article_id":"0","message":"Group B - Msg 1<\/p>","rating":"1"}
+  ,{"groupid":"2","score":"120","article_id":"0","message":"Group B - Msg 2<\/p>","rating":"2"}]]}

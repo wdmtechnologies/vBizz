@@ -1,0 +1,10 @@
+Trip status flag
+0 - incomplete
+1 - complete
+
+employee status
+0 - offline
+1- online
+2- ontrip
+
+status of employee who are not alloted a trip can't have  status 2

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_4sdp"
+    tools:context=".SearchResultActivity">
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_below="@id/ib_back"
+        android:textSize="@dimen/_13ssp"
+        android:hint="Search by driver or trip name"
+        android:layout_marginTop="@dimen/_10sdp"
+         android:background="@drawable/et_search_background"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_trip"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_search"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip"
+            android:checked="true"
+            android:textSize="@dimen/_15ssp"/>
+
+        <RadioButton
+            android:id="@+id/rb_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver"
+            android:layout_marginStart="@dimen/_35ssp"
+            android:textSize="@dimen/_15ssp"/>
+
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg_trip"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+
+</RelativeLayout>

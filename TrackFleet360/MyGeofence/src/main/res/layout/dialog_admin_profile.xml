@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_profile_dialog"
+    android:layout_height="@dimen/height_profile_dialog"
+    android:paddingBottom="@dimen/padding_vertical"
+    android:paddingTop="5dp"
+    tools:context=".ProfileDetailActivity">
+
+  <ImageButton
+     android:id="@+id/ib_cancel_dialog_profile"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/ic_cancel18"
+      android:layout_marginTop="@dimen/margin_top_btn_dismiss_dialog"
+      android:layout_alignParentEnd="true"
+     android:backgroundTint="@android:color/transparent"/>
+
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+      android:paddingStart="@dimen/padding_horizontal"
+     android:paddingEnd="@dimen/padding_horizontal"
+     android:layout_below="@id/ib_cancel_dialog_profile"
+      >
+
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/iv_admin_profile"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/admin" />
+
+
+
+  <EditText
+      android:id="@+id/et_name_profile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="14"
+      android:layout_marginTop="@dimen/margin_top_et"
+      android:layout_below="@id/iv_admin_profile"
+      android:inputType="textPersonName"
+      android:hint="Name" />
+
+  <EditText
+      android:id="@+id/et_email_profile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top_et"
+      android:layout_below="@id/et_name_profile"
+      android:inputType="textEmailAddress"
+      android:hint="Email" />
+
+  <EditText
+      android:id="@+id/et_contact_profile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top_et"
+      android:layout_below="@id/et_email_profile"
+      android:inputType="textEmailAddress"
+      android:hint="Contact" />
+
+
+  <EditText
+      android:id="@+id/et_address_profile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top_et"
+      android:layout_below="@id/et_contact_profile"
+      android:inputType="textPersonName"
+      android:hint="Address" />
+
+  <EditText
+      android:id="@+id/et_country_profile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top_et"
+      android:layout_below="@id/et_address_profile"
+      android:inputType="textPersonName"
+      android:hint="Country" />
+
+  <Button
+      android:id="@+id/btn_update_detail_profile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:foreground="?attr/selectableItemBackground"
+      android:layout_marginTop="@dimen/margin_top_update_btn_profile_dialog"
+      android:background="@drawable/signin_btn_background"
+      android:text="@string/update_btn" />
+
+ </RelativeLayout>
+
+
+
+
+</RelativeLayout>

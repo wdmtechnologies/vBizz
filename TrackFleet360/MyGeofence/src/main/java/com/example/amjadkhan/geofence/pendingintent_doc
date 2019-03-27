@@ -1,0 +1,21 @@
+Pending Intent        :  A PendingIntent is a token that you give to a foreign application (e.g. NotificationManager, AlarmManager,
+                         Home Screen AppWidgetManager, or other 3rd party applications), which allows the foreign application to use your
+                         application's permissions to execute a predefined piece of code.
+                         If you give the foreign application an Intent, it will execute your Intent with its own permissions.
+                         But if you give the foreign application a PendingIntent, that application will execute your Intent using your
+                         application's permission
+                         A PendingIntent specifies an action to take in the future. It lets you pass a future Intent to another
+                         application and allow that application to execute that Intent as if it had the same permissions as your
+                         application, whether or not your application is still around when the Intent is eventually invoked
+
+                         It is an Intent action that you want to perform but at a later time.
+                         The reason it’s needed is because an Intent must be created and launched from a valid Context in your application,
+                         but there ar   e certain cases where one is not available at the time you want to run the action because you are
+                         technically outside the application’s context (the two common examples are launching an Activity from a
+                         Notification or a BroadcastReceiver.By creating a PendingIntent you want to use to launch, say, an Activity
+                         while you have the Context to do so (from inside another Activity or Service)
+
+
+                     It's a token that your app process will give to the location process, and the location process will use it to wake up your app when
+                     an event of interest happens. So this basically means that your app in the background doesn't have to be always running.
+                        When something of interest happens, we will wake you up. This saves a lot of battery.

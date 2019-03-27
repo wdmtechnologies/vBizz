@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageButton
+        android:id="@+id/ib_dismiss_trip_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel18"
+        android:layout_marginTop="@dimen/margin_top_btn_dismiss_dialog"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/transparent"/>
+
+
+
+    <TextView
+        android:id="@+id/trip_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New trip"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/rubik_regular"
+         android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_dialog_trip_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13ssp"
+        android:paddingStart="@dimen/_6sdp"
+         android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@id/trip_label"
+        android:inputType="textPersonName"
+        android:hint="Trip name" />
+
+    <EditText
+        android:id="@+id/et_dialog_source_address"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_dialog_trip_name"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/_13ssp"
+        android:maxLines="2"
+        android:paddingStart="6dp"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_marginTop="@dimen/_5sdp"
+         android:layout_below="@id/et_dialog_trip_name"
+        android:hint="Source address" />
+
+    <ImageButton
+        android:id="@+id/ib_src_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_place"
+        android:layout_below="@id/et_dialog_trip_name"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/et_dialog_source_address"
+        android:layout_alignBottom="@id/et_dialog_source_address"
+        android:backgroundTint="@android:color/transparent"
+
+       />
+
+    <EditText
+        android:id="@+id/et_dialog_dest_address"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_dialog_trip_name"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/_13ssp"
+        android:paddingStart="6dp"
+
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toRightOf="@id/et_dialog_source_address"
+        android:layout_below="@id/et_dialog_source_address"
+        android:hint="Destination address" />
+
+
+    <ImageButton
+        android:id="@+id/ib_dest_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_place"
+        android:layout_below="@id/et_dialog_source_address"
+        android:layout_marginStart="2dp"
+
+        android:layout_alignBottom="@id/et_dialog_dest_address"
+        android:layout_toEndOf="@id/et_dialog_dest_address"
+        android:backgroundTint="@android:color/transparent"
+
+        />
+
+    <EditText
+        android:id="@+id/et_dialog_pickup_time"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_dialog_trip_name"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/_13ssp"
+        android:paddingStart="6dp"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/et_dialog_dest_address"
+        android:hint="Time" />
+
+    <ImageButton
+        android:id="@+id/ib_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clock"
+        android:layout_below="@id/et_dialog_dest_address"
+         android:layout_marginRight="3dp"
+        android:layout_alignBottom="@id/et_dialog_pickup_time"
+        android:layout_toRightOf="@id/et_dialog_pickup_time"
+        android:backgroundTint="@android:color/transparent"
+
+        />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/et_dialog_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_dialog_trip_name"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_marginTop="3dp"
+        android:paddingStart="6dp"
+        android:layout_toRightOf="@id/et_dialog_source_address"
+        android:layout_below="@id/ib_clock"
+        android:hint="Enter driver name " />
+
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner_dilaog_geofence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_dialog_trip_name"
+        android:layout_below="@id/et_dialog_driver"
+        android:textSize="18sp"
+        android:layout_marginTop="6dp"
+        android:text="Choose Geofence"
+        />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner_dialog_poi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_dialog_trip_name"
+        android:textSize="18sp"
+        android:layout_below="@id/spinner_dilaog_geofence"
+        android:text="Choose POI"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_dialog_add_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:textSize="17sp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/spinner_dialog_poi"
+         android:foreground="?attr/selectableItemBackground"
+        android:textColor="@color/light_red"
+         android:text="Add"
+        />
+
+    <Button
+        android:id="@+id/btn_dialog_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@null"
+         android:foreground="?attr/selectableItemBackground"
+         android:textColor="@color/light_red"
+        android:textSize="17sp"
+        android:layout_toStartOf="@id/btn_dialog_add_trip"
+        android:layout_alignTop="@id/btn_dialog_add_trip"
+         android:text="Reset"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

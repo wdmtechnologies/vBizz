@@ -1,0 +1,25 @@
+[
+  {
+    "emp_id": "1",
+    "user_group_id": null,
+    "e_name": "Andre Fletcher",
+    "e_address": "453 Sammy Apartment",
+    "e_city": "Birmingham",
+    "e_state": null,
+    "e_zip": null,
+    "e_country": "UK",
+    "e_contact": "32324455",
+    "e_email": "fletcherandre@gmail.com",
+    "e_password": "fletcher@12345",
+    "company_id": null,
+    "created": null,
+    "modified": null,
+    "trip_alloted": "1",
+
+    "profile_img": "andrefletcher.jpg",
+    "e_rating": "3.6",
+
+    "status": "1",
+    "created_by": "1"
+  }
+]

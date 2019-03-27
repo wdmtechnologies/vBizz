@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/item_driver_horizontal_margin"
+    android:paddingEnd="@dimen/item_driver_horizontal_margin"
+    android:paddingBottom="10dp"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="20dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_item_driver_img"
+        android:layout_width="@dimen/size_driver_item"
+        android:layout_height="@dimen/size_driver_item"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+         android:src="@drawable/admin" />
+
+    <TextView
+        android:id="@+id/tv_item_driver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_item_driver_img"
+        android:layout_alignTop="@id/iv_item_driver_img"
+         android:layout_marginStart="16dp"
+        android:textSize="@dimen/txt_size_18"
+        android:textColor="@color/black"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Alex Cameron"/>
+
+    <TextView
+        android:id="@+id/tv_item_driver_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_item_driver_img"
+         android:layout_below="@id/tv_item_driver_name"
+        android:layout_alignStart="@id/tv_item_driver_name"
+        android:layout_marginStart="2dp"
+         android:fontFamily="@font/rubik_regular"
+        android:text="Offline"/>
+
+
+    <TextView
+        android:id="@+id/tv_item_driver_vehcile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+         android:layout_alignTop="@id/iv_item_driver_img"
+        android:layout_marginStart="20dp"
+         android:textStyle="bold"
+        android:fontFamily="@font/opensans_regular"
+        android:text=""/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

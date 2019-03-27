@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/_10sdp"
+    android:layout_height="@dimen/_40sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_driver_item"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/admin"
+        />
+
+    <TextView
+        android:id="@+id/tv_driver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="Name"
+         android:textColor="#000"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+	<dimen name="login_checkbox_margin_top">18dp</dimen>
+ 	<dimen name="card_width">495dp</dimen>
+	<dimen name="bottom_nav_height">150dp</dimen>
+	<dimen name="icon_size">51dp</dimen>
+	<dimen name="width_profile_dialog">400dp</dimen>
+	<dimen name="height_profile_dialog">500dp</dimen>
+	<dimen name="splash_screen_text">24sp</dimen>
+	<dimen name="dialog_paddingLeft">37.5dp</dimen>
+	<dimen name="cv_home_fragment_searchbox_height">120dp</dimen>
+	<dimen name="height_cv_map_fragment">45dp</dimen>
+	<dimen name="margin_top_cv_map_fragment">25dp</dimen>
+	<dimen name="margin_horizontal_cv_map_fragment">20.5dp</dimen>
+	<dimen name="ib_home_map_fragment_size">60dp</dimen>
+	<dimen name="profile_dialog_width">825.7dp</dimen>
+	<dimen name="profile_dialog_height">1158.2dp</dimen>
+	<dimen name="et_dialog_width">500dp</dimen>
+	<dimen name="margin_top_update_btn_profile_dialog">35dp</dimen>
+	<dimen name="size_driver_item">35dp</dimen>
+
+	<dimen name="margin_top_btn_dismiss_dialog">5dp</dimen>
+	<!--<dimen name="width_trip_dialog">400dp</dimen>-->
+	<!--<dimen name="height_trip_dialog">500.4dp</dimen>-->
+	<dimen name="width_et_trip_dialog">305dp</dimen>
+ 	<dimen name="item_driver_horizontal_margin">25dp</dimen>
+	<dimen name="driver_item_img_width">56.2dp</dimen>
+	<dimen name="driver_item_img_height">56.2dp</dimen>
+	<dimen name="padding_vertical">24dp</dimen>
+	<dimen name="margin_top_card_login">74.7dp</dimen>
+    <dimen name="size_tv_16sp">16sp</dimen>
+	<dimen name="width_nav_view">200dp</dimen>
+</resources>

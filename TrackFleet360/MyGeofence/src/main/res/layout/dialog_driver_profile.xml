@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_height="400dp"
+    android:layout_width="match_parent"
+     app:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingLeft="15dp"
+     android:paddingBottom="70dp"
+      android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_dialog_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/admin" />
+
+    <TextView
+        android:id="@+id/tv_driver_name_dialog_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alex"
+        android:fontFamily="@font/rubik_regular"
+         android:layout_marginTop="5dp"
+        android:layout_below="@id/iv_dialog_profile"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_driver_name_dialog_profile"
+        android:layout_marginTop="20dp"
+         app:srcCompat="@drawable/address_black" />
+
+    <TextView
+        android:id="@+id/tv_dialog_driver_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_location"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_toEndOf="@id/iv_location"
+        android:text="C-212,Shaheen Bagh"
+
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_profile_phone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_location"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/iv_location"
+        app:srcCompat="@drawable/dialericonblack" />
+
+    <TextView
+        android:id="@+id/tv_dialog_driver_phonr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_alignLeft="@id/tv_dialog_driver_address"
+         android:layout_alignTop="@id/iv_dialog_profile_phone"
+        android:text="9838342948" />
+
+
+    <ImageView
+        android:id="@+id/iv_dialog_profile_email"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_dialog_profile_phone"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/iv_location"
+        app:srcCompat="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/tv_dialog_profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_below="@id/tv_dialog_driver_address"
+        android:layout_alignLeft="@id/tv_dialog_driver_address"
+        android:layout_alignTop="@id/iv_dialog_profile_email"
+        android:text="alex121@gmail.com" />
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

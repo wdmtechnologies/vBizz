@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trip.TripDetailActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@id/map_view_trip_detail">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_driver"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                 android:layout_marginStart="40dp"
+                 android:clickable="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                 android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/admin" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/driver_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Alex "-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_alignTop="@id/iv_driver"-->
+                <!--android:layout_toEndOf="@id/iv_driver"-->
+                <!--android:textSize="24dp" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:paddingStart="10dp"
+                android:layout_below="@id/iv_driver"
+                android:layout_gravity="top"
+                android:layout_marginTop="25dp"
+                android:paddingTop="5dp">
+
+
+                <ImageView
+                    android:id="@+id/green_dot"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#00ff00"
+                    android:background="@drawable/ic_place" />
+
+
+                <TextView
+                    android:id="@+id/source_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_alignBottom="@+id/pickup_time"
+                      android:text="Shaheen Bagh"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@id/green_dot"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/red_dot"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/green_dot"
+                    android:layout_alignStart="@id/green_dot"
+                    android:layout_marginTop="18dp"
+                    android:backgroundTint="@color/red"
+                    android:background="@drawable/ic_place" />
+
+
+                <TextView
+                    android:id="@+id/dest_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/source_address"
+                    android:layout_alignTop="@id/red_dot"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="Lajpat Nagar,Part 1"
+                    android:textSize="20sp" />
+
+
+
+                <TextView
+                    android:id="@+id/pickup_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/green_dot"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="19dp"
+                    android:text="16:00, 24/10"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/drop_time"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/pickup_time"
+                    android:layout_alignTop="@id/red_dot"
+                    android:layout_alignParentEnd="true"
+                     android:layout_marginEnd="7dp"
+                    android:text="16:30, 24/10"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/trip_status_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_below="@id/dest_address"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_alignLeft="@id/dest_address"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/trip_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type "
+                    android:layout_alignLeft="@id/trip_status_label"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_below="@id/trip_status_label"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                     android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/pickup_time"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/tv_trip_status"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_alignTop="@id/trip_type_label"
+                    android:layout_marginEnd="7dp"
+                    android:text="General"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_trip_status"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/pickup_time"
+                     android:layout_alignParentEnd="true"
+                    android:layout_below="@id/drop_time"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_alignTop="@id/trip_status_label"
+                    android:layout_marginEnd="7dp"
+                    android:text="Completed"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view_trip_detail"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+            />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_close"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/map_view_trip_detail"
+        android:layout_alignTop="@+id/map_view_trip_detail"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="41dp"
+        android:foregroundGravity="center"
+        android:backgroundTintMode="src_in"
+         android:backgroundTint="#fff"
+         android:src="@drawable/ic_close" />
+
+
+</RelativeLayout>

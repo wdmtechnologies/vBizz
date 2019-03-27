@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Force overspeed 145km/h"
+        android:textSize="@dimen/size_tv_16sp"
+        android:textColor="#000"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/rubik_regular"
+         android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_place_logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_place_black_24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignStart="@id/tv_alert"
+        android:layout_below="@id/tv_alert"/>
+
+    <TextView
+        android:id="@+id/tv_alert_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lat : 28.434 Lon: 22.321"
+        android:layout_toEndOf="@id/iv_place_logo"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_below="@id/tv_alert"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_alignParentEnd="true"
+         android:text="HR55X34"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_clock_logo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_clock"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:layout_alignStart="@id/tv_heading_notification_item"-->
+        <!--android:layout_below="@id/iv_place_logo"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_alert_time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="7 PM"-->
+        <!--android:layout_toEndOf="@id/iv_place_logo"-->
+        <!--android:fontFamily="@font/rubik_regular"-->
+        <!--android:layout_below="@id/iv_place_logo"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:layout_marginStart="20dp"/>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+fleet features
+Admin Login
+Home
+Vehicle To Driver
+Marine route if enabled
+Trips
+Live Tracking
+Notification
+Reports
+
+Driver Login ->
+
+ vehicle to Driver
+ Trips
+ Marine Route
+Notifications
+
+
+todo :
+Search by driver and vehicle
+Admin can search the active driver location on map search bar
+On search, suggestions is provided based on search input

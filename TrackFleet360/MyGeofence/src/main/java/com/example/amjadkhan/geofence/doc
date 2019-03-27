@@ -1,0 +1,26 @@
+vivo : scaleFactor : 1.5 : hdpi
+
+ldpi = 0.00625 * 120 -> 0.75
+mdpi = 0.00625 * 160 -> 1.0
+hdpi = 0.00625 * 240 -> 1.5
+xhdpi = 0.00625 * 320 -> 2.0
+xxhdpi = 0.00625 * 480 -> 3.0
+xxxhdpi = 0.00625 * 640 -> 4.0
+
+Driver requirements:
+Driver gets a login id  from admin..
+He may request password reset from login screen
+1. Driver can rcv the alerts when new trip is assigned to him.
+2. He has following type of trip list:
+Future trips :
+Ongoing trip
+Completed trips
+
+
+
+
+
+
+
+
+

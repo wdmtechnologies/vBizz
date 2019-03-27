@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+         <item name="colorAccent">@color/light_red</item>
+        <item name="colorPrimaryDark">@color/intro_status_bar_color</item>
+        <item name="android:windowTranslucentStatus">false</item>   <!-- main ui will overlay status bar if set to true !-->
+       <item name="listPreferredItemHeight">30dp</item>
+        <item name="colorControlHighlight">@color/grey</item>
+      </style>
+
+    <style parent="TextAppearance.AppCompat.Small" name="MyHintStyle">
+
+    <item name="android:textColor">@color/light_red</item>
+
+</style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light" >
+
+        <item name="android:colorControlNormal">#d3d3d3</item>
+        <item name="android:colorControlActivated">@color/light_red</item>
+
+    </style>
+
+    <style name="Divider">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="list_item_style">
+
+        <item name="android:selectableItemBackground">@drawable/selectable_item_background</item>
+        <item name="android:background">@color/red</item>
+
+    </style>
+
+    <style name="Rubik_font_style" parent="android:Widget.TextView">
+
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+
+
+    <!--Dialog animation -->
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+
+    <style name="Btn_RippleStyle" parent="Theme.AppCompat" >
+
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+
+
+
+
+
+</resources>
